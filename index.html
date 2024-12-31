@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Penyimpan Foto dan Video Online</title>
+</head>
+<body>
+    <header>
+        <h1>Penyimpan Foto dan Video Online</h1>
+        <nav>
+            <ul>
+                <li><a href="#upload">Unggah</a></li>
+                <li><a href="#gallery">Galeri</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="upload">
+        <h2>Unggah Foto atau Video</h2>
+        <div id="dropArea">
+            <p>Seret dan jatuhkan file di sini atau klik untuk memilih file</p>
+            <input type="file" id="fileInput" accept="image/*,video/*" multiple>
+        </div>
+        <button id="uploadButton">Unggah</button>
+        <h3>Preview</h3>
+        <div id="previewContainer"></div> <!-- Area untuk preview -->
+    </section>
+
+    <section id="gallery">
+        <h2>Galeri</h2>
+        <label for="filter">Filter: </label>
+        <select id="filter">
+            <option value="all">Semua</option>
+            <option value="image">Foto</option>
+            <option value="video">Video</option>
+        </select>
+        <div id="galleryContainer"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Moch Rafly Ilhamsyah. Semua hak dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
